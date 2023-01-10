@@ -18,6 +18,9 @@ export const RightSide = () => {
      </div>
 
      <TrendCard />
+     <button className="btn rs-btn">
+        Share
+     </button>
     </div>
   )
 }
