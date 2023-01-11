@@ -12,10 +12,43 @@ export const Auth = () => {
           <h6>Getting people closer</h6>
         </div>
       </div>
-      <Signup />
+      <Login />
     </div>
   );
 };
+
+function Login() {
+    return (
+      <div className="a-right">
+        <form action="" className="infoForm authForm">
+          <h3>Login</h3>
+          <div>
+            <input
+              type="text"
+              placeholder="UserName"
+              className="infoInput"
+              name="userName"
+            />
+          </div>
+          <div>
+            <input
+              type="text"
+              placeholder="Password"
+              className="infoInput"
+              name="password"
+            />
+          </div>
+          <div>
+            <span style={{fontSize:'13px'}}>Don't have an account? SignUp Now</span>
+            <button className="btn login-btn" type="submit">
+            Login
+          </button>
+          </div>
+          
+        </form>
+      </div>
+    );
+  }
 
 function Signup() {
   return (
